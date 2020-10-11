@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Models</title>
+</head>
+<style>
+    body {
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('car.jpeg');
+        background-size: 1600px auto;
+        background-repeat: no-repeat;
+    }
+
+    header {
+        display: block;
+        background-color: rgb(48, 46, 46);
+        height:75px;
+        position: sticky;
+    }
+
+    .left {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        left: 12px;
+        top: 2px;
+    }
+
+    .left img {
+        width: 70px;
+    }
+
+    .left div {
+        text-align: center;
+        line-height: 14px;
+    }
+
+    .mid {
+        display: block;
+        /* border: 2px solid rgb(13, 136, 13); */
+        width: 40%;
+        margin: 21px auto;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        /* float:left; */
+        font-size: 19px;
+    }
+
+    .navbar li a {
+        text-decoration: none;
+        color: white;
+        padding: 23px 23px;
+    }
+
+    .navbar li a:hover {
+        color: grey;
+        text-decoration: underline;
+    }
+
+    .navbar li a.highlight {
+        color: grey;
+        text-decoration: underline;
+    }
+
+    .right {
+        display: inline-block;
+        /* border: 2px solid pink; */
+        position: absolute;
+        right: 4px;
+        top: 20px;
+    }
+
+    .btn {
+        color: white;
+        margin: 0px 8px;
+        cursor: pointer;
+        padding: 8px 16px;
+        font-size: 16px;
+        border: 2px solid grey;
+        background-color: black;
+        border-radius: 15px;
+    }
+
+    .btn:hover {
+        background-color: grey;
+    }
+
+    .container {
+        border: 2px solid white;
+        margin: 106px 80px;
+        width: 40%;
+        border-radius: 20px;
+        padding: 40px;
+    }
+
+    .form-group input {
+        text-align: center;
+        font-size: 18px;
+        display: block;
+        width: 380px;
+        padding: 2px;
+        border: 1px solid black;
+        margin: 9px auto;
+        border-radius: 8px;
+        ;
+
+    }
+
+    .container h1 {
+        font-size: 27px;
+        text-align: center;
+    }
+
+    .container button {
+        display: block;
+        width: 72%;
+        margin: 20px auto;
+    }
+</style>
+
+<body>
+    <header>
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="car logo.jpeg">
+            <div>Car Models</div>
+        </div>
+        <!-- mid box for navigation -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="highlight">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Car Models</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right for bottons -->
+        <div class="right">
+            <botton class="btn">Call Us Now</botton>
+            <botton class="btn">Email Us</botton>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Register to get Car's Model Information</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Car Model">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
